@@ -5,26 +5,17 @@ import java.util.Scanner;
 
 public class PindaiBuku {
     static ArrayList<Integer> bukuPinjam = new ArrayList<>();
-    private String nama;
-
-    public String getNama() {
-        return nama;
-    }
-
-    public void setNama(String nama) {
-        this.nama = nama;
-    }
+    static ArrayList<String> namaPeminjam = new ArrayList<>();
 
     static void scanBuku() {
         Scanner scan = new Scanner(System.in);
         System.out.println();
         int a=0;
         System.out.println("----------PERPUSTAKAAN PTI-----------");
-        System.out.println("========== PINDAI BUKU ==========");
+        System.out.println("=========== PINDAI BUKU ===========");
         System.out.println("Cttn : maksimal 5 buku");
         System.out.print("Nama : ");
-        scan.nextLine();
-        String nama = scan.nextLine();
+        namaPeminjam.add(scan.nextLine());
         while (a!=5){
             System.out.print("Masukkan Nomor Buku : ");
             bukuPinjam.add(scan.nextInt());  a++;
