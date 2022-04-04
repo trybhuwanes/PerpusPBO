@@ -1,0 +1,19 @@
+Index: com/perpus/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.perpus;\r\n\r\npublic class Main {\r\n    public static void main(String[] args) {\r\n        System.out.println(\"tes 123124 \");\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/perpus/Main.java b/com/perpus/Main.java
+--- a/com/perpus/Main.java	(revision 1cc1dffda80a9f8e520188c7d75eda950d97f566)
++++ b/com/perpus/Main.java	(date 1648782657978)
+@@ -2,7 +2,7 @@
+ 
+ public class Main {
+     public static void main(String[] args) {
+-        System.out.println("tes 123124 ");
++        System.out.println("tes 677565 ");
+ 
+     }
+ }
