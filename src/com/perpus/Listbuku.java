@@ -1,6 +1,6 @@
 package com.perpus;
 
-public class Listbuku {
+public class ListBuku {
     public static void main(String[] args) {
         String[] buku = new String[10];
         System.out.println("======= PERPUSTAKAAN PTI =======");
