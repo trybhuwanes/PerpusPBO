@@ -7,6 +7,7 @@ public class ListBuku {
 
     public static void tampilList() {
         System.out.println("----------PERPUSTAKAAN PTI-----------");
+        System.out.println("========== LIST BUKU ==========");
         listBuku.add(" The Pragmatic Programmer: Your Journey to Mastery");
         listBuku.add(" Structure and Interpretation of Computer Programs");
         listBuku.add(" Code Complete: A Practical Handbook of Software Construction");
@@ -15,6 +16,7 @@ public class ListBuku {
         listBuku.add(" Peopleware: Productive Projects and Teams");
         listBuku.add(" Rapid Development: Taming Wild Software Schedules");
         listBuku.add(" HTML and CSS: Design and Build Websites");
+        System.out.println("=====================================");
 
         for (int i = 0; i < listBuku.size(); i++) {
             System.out.println((i + 1)+ listBuku.get(i));

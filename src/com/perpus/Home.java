@@ -2,14 +2,10 @@ package com.perpus;
 
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
-//        ListBuku.tampilList();
-//        PindaiBuku.scanBuku();
-//        Struk.cetakStruk();
+class Home {
+    public static void menu() {
         Scanner input = new Scanner(System.in);
-        System.out.println("----------PERPUSTAKAAN PTI-----------");
-        System.out.println("========== MENU ==========");
+        System.out.println("----------PERPUSTAKAAN PTI-----------");        System.out.println("========== MENU ==========");
         System.out.println("1. Lihat list buku");
         System.out.println("2. Pindai kode buku");
         System.out.println("0. Keluar");
@@ -19,11 +15,8 @@ public class Main {
             ListBuku.tampilList();
         } else if ( pilihan == 2){
             PindaiBuku.scanBuku();
-            Struk.cetakStruk();
         } else {
             System.exit(0);
         }
     }
 }
-
-

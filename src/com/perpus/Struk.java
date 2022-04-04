@@ -22,6 +22,7 @@ public class Struk {
     }
 
     static void cetakStruk() {
+        System.out.println();
         System.out.println("----------PERPUSTAKAAN PTI-----------");
         System.out.print("Tanggal\t\t: ");
         currentDate();
@@ -29,12 +30,9 @@ public class Struk {
         System.out.println("=====================================");
 
         for (int i = 0; i < PindaiBuku.bukuPinjam.size(); i++) {
-            System.out.println(PindaiBuku.bukuPinjam.get(i));
+            System.out.print(PindaiBuku.bukuPinjam.get(i) + "  ");
+            System.out.println(ListBuku.listBuku.get((PindaiBuku.bukuPinjam.get(i)) - 1));
         }
-
-        System.out.println("0000000\t Buku 1");
-        System.out.println("0000001\t Buku 2");
-        System.out.println("0000002\t Buku 3");
         System.out.println("=====================================");
         System.out.print("Tanggal Kembali : ");
         returnDate();
