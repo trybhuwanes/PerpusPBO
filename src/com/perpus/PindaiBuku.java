@@ -4,10 +4,15 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class PindaiBuku {
-//    static int[] bukuPinjam = new int[1];
-
     static ArrayList<Integer> bukuPinjam = new ArrayList<>();
-    PindaiBuku() {
+    private String nama;
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
     }
 
     static void scanBuku() {
@@ -17,6 +22,9 @@ public class PindaiBuku {
         System.out.println("----------PERPUSTAKAAN PTI-----------");
         System.out.println("========== PINDAI BUKU ==========");
         System.out.println("Cttn : maksimal 5 buku");
+        System.out.print("Nama : ");
+        scan.nextLine();
+        String nama = scan.nextLine();
         while (a!=5){
             System.out.print("Masukkan Nomor Buku : ");
             bukuPinjam.add(scan.nextInt());  a++;
