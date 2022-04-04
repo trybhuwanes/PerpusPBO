@@ -26,7 +26,7 @@ public class Struk {
         System.out.println("----------PERPUSTAKAAN PTI-----------");
         System.out.print("Tanggal\t\t: ");
         currentDate();
-        System.out.println("Nama\t\t: " + );
+        System.out.println("Nama\t\t: ");
         System.out.println("=====================================");
 
         for (int i = 0; i < PindaiBuku.bukuPinjam.size(); i++) {
