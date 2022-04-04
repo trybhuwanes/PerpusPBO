@@ -6,10 +6,6 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class Struk {
-    Struk() {
-
-    }
-
     static void currentDate() {
         DateFormat formatTanggal = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Date tanggal = new Date();
@@ -25,12 +21,17 @@ public class Struk {
         System.out.println(formatTanggal.format(limaharilagi));
     }
 
-    public static void main(String[] args) {
+    static void cetakStruk() {
         System.out.println("----------PERPUSTAKAAN PTI-----------");
         System.out.print("Tanggal\t\t: ");
         currentDate();
         System.out.println("Nama\t\t: ");
         System.out.println("=====================================");
+
+        for (int i = 0; i < PindaiBuku.bukuPinjam.size(); i++) {
+            System.out.println(PindaiBuku.bukuPinjam.get(i));
+        }
+
         System.out.println("0000000\t Buku 1");
         System.out.println("0000001\t Buku 2");
         System.out.println("0000002\t Buku 3");
